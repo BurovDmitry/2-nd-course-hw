@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.header {
+  height: 1024px;
+  background-image: url(img/Rectangle1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header_title {
+  padding-top: 216px;
+  font-size: 64px;
+  max-width: 760px;
+  color: #ffffff;
+}
+.header_text {
+  margin-top: 32px;
+  line-height: 1.8;
+  height: 64PX;
+  font-size: 18px;
+  max-width: 480px;
+  color: #ffffff;
+}
+.header_button {
+  margin-top: 44px;
+  font-family: "Montserrat";
+  background: #9C0332;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 234px;
+  height: 48px;
+  font-size: 18px;
+  transition: all 0.5s;
+  border: 0;
+}
+.header_button:hover {
+  background: #f7820d;
+  color: #FFFFFF;
+}
+
+.game {
+  height: 556px;
+  background-image: url(img/Rectangle5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.game__container:hover {
+  outline: 5px solid #44D2FF;
+  border-radius: 18px;
+}
+.game__container_item {
+  transition: all 0.3s;
+  border-radius: 18px;
+}
+.game__container_text {
+  position: absolute;
+  font-size: 24px;
+  padding-left: 32px;
+  padding-top: 236px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
