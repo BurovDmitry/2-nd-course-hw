@@ -23,13 +23,16 @@ body {
   background-position: center;
   background-size: cover;
 }
-.header_title {
+
+.header-bloc {
   padding-top: 216px;
+}
+.header-bloc_title {
   font-size: 64px;
   max-width: 760px;
   color: #ffffff;
 }
-.header_text {
+.header-bloc_text {
   margin-top: 32px;
   line-height: 1.8;
   height: 64PX;
@@ -37,7 +40,7 @@ body {
   max-width: 480px;
   color: #ffffff;
 }
-.header_button {
+.header-bloc_button {
   margin-top: 44px;
   font-family: "Montserrat";
   background: #9C0332;
@@ -49,7 +52,7 @@ body {
   transition: all 0.5s;
   border: 0;
 }
-.header_button:hover {
+.header-bloc_button:hover {
   background: #f7820d;
   color: #FFFFFF;
 }
@@ -67,11 +70,15 @@ body {
   justify-content: center;
 }
 
+.game__container {
+  height: 300px;
+}
 .game__container:hover {
   outline: 5px solid #44D2FF;
   border-radius: 18px;
 }
 .game__container_item {
+  width: 100%;
   transition: all 0.3s;
   border-radius: 18px;
 }
@@ -81,4 +88,39 @@ body {
   padding-left: 32px;
   padding-top: 236px;
   color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    height: 735px;
+  }
+  .header-bloc {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-bloc_title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .header-bloc_text {
+    text-align: center;
+    font-size: 14px;
+  }
+  .header-bloc_button {
+    margin-top: 32px;
+  }
+  .game {
+    height: 1221px;
+    display: flex;
+    flex-direction: column;
+  }
+  .game__container_text {
+    padding-left: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
