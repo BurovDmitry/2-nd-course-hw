@@ -71,7 +71,7 @@ body {
 }
 
 .game__container {
-  height: 300px;
+  transition: all 0.3s;
 }
 .game__container:hover {
   outline: 5px solid #44D2FF;
@@ -79,7 +79,6 @@ body {
 }
 .game__container_item {
   width: 100%;
-  transition: all 0.3s;
   border-radius: 18px;
 }
 .game__container_text {

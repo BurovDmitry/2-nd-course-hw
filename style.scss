@@ -77,7 +77,7 @@ body {
 
  .game {
     &__container {
-        height: 300px;
+        transition: all 0.3s;
 
         &:hover {
             outline: 5px solid #44D2FF;
@@ -86,7 +86,6 @@ body {
 
         &_item {
             width: 100%;
-            transition: all 0.3s;
             border-radius: 18px;
         }
 
