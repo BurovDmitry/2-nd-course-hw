@@ -71,6 +71,7 @@ body {
 }
 
 .game__container {
+  position: relative;
   transition: all 0.3s;
 }
 .game__container:hover {
@@ -83,9 +84,9 @@ body {
 }
 .game__container_text {
   position: absolute;
+  bottom: 32px;
+  left: 32px;
   font-size: 24px;
-  padding-left: 32px;
-  padding-top: 236px;
   color: #FFFFFF;
 }
 
@@ -120,6 +121,6 @@ body {
     flex-direction: column;
   }
   .game__container_text {
-    padding-left: 12px;
+    left: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
