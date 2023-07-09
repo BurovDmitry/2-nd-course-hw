@@ -1,20 +1,20 @@
-//тут тоже нужна помощь не выводит =/
+//не выводит =/
 
 function monthNumber() {
     let userAnswe = prompt(`Введите номер месяца`, '1 - 12');
-    if (!Number.isNaN(userAnswe)) {
-        return 'Неправильное число попробуйте еще раз';
+    if (isNaN(userAnswe)) {
+        alert('Неправильное число попробуйте еще раз');
     }
-    if (userAnswe === 12 || (userAnswe >=1 && userAnswe <=3)) {
+    if (userAnswe === 12 || (userAnswe >=1 && userAnswe <=2)) {
         season = 'Зима';
-    } else if (userAnswe >=4 && userAnswe <=6) {
+    } else if (userAnswe >=3 && userAnswe <=5) {
         season = 'Весна';
-    }  else if (userAnswe >=7 && userAnswe <=9) {
+    }  else if (userAnswe >=6 && userAnswe <=8) {
         season = 'Лето';
-    }  else if (userAnswe >=10 && userAnswe <=12) {
+    }  else if (userAnswe >=9 && userAnswe <=11) {
         season = 'Осень';
     }
-    return season;
+    alert(season);
 }
 
 

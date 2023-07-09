@@ -30,13 +30,12 @@ console.log(evenOdd(102));
 // Задание 3
 
 function square (c) {
+    return c ** 2;
+}
 
-    return c * c;
-};
+let sq = square(5);
 
-console.log(square(10));
-
-// 3 задание не совсем понял
+console.log (`№3 - ${sq}`);
 
 
 
@@ -77,33 +76,33 @@ printMessage();
 
 const check = (m, v) => {
 
-    if (!isNaN(m, v)) {
-        return  m * v;
+    if (isNaN(m) || isNaN(v)) {
+        return '№5 Одно или оба значения не являются числом'
+
     } else {
-        return '№5 Одно или оба значения не являются числом';
+        return `№5 - ${ m * v }`
     }
 };
 
-console.log(check(6, 7)); 
-// если первым прописать не число работает как надо, если 2рым прописать не число пишет NaN
-//подскажите где поправить
+console.log(check(4, 7)); 
+
 
 // Задание 6
 
-let n = prompt("№6 Напишите число");
+let n = Number(prompt("№6 Напишите число"));
 
-let numericMessage;
+const nM = (n) => {
 
-let numeric = (n) => {
-
-    if (!isNaN(n)) {
-        let result = `n в кубе равняется ${n ** 3}`;
-        return result;
-    } else {
+    if (isNaN(n)) {
         return '№6 Переданный параметр не является числом';
+
+    } else {
+        return `№6 n в кубе равняется ${n ** 3}`;
     }
-};
-// Не смог осилить нужна помощь =/
+}
+
+console.log(nM(n));
+
 
 
 // Задание 7

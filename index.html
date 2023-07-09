@@ -20,9 +20,9 @@
    </header>
    <div class="game center">
         <div class="game__container">
-            <a href="#" onclick="monthNumber();">
+            <a href="#game1">
                 <img class="game__container_item" src="img/game1.jpg" alt="#" >
-                <div class="game__container_text" ><b>Игра 1</b></div>
+                <div  class="game__container_text" ><b>Игра 1</b></div>
             </a>
         </div>
         <div class="game__container">
@@ -40,10 +40,10 @@
     </div>
     <div class="time center">
         <div class="time-bloc">
-            <div class="time-bloc__cell">
+            <div class="time-bloc__cell" id="game1">
                 <h1 class="time-bloc__cell_title">Времена года!</h1>
                 <p class="time-bloc__cell_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</b></p>
-                <button class="time-bloc__cell_button">Играть!</button>
+                <button class="time-bloc__cell_button" onclick="monthNumber();">Играть!</button>
             </div>                    
             <div >
                 <svg class="time-bloc_img" width="485" height="334" viewBox="0 0 485 334" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,4 +135,4 @@
  <script src="hw-2.5.js"></script>
  <script src="script.js"></script>
 </body>
-</html>
+</html> 
