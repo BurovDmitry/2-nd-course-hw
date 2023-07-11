@@ -42,7 +42,7 @@ for (let n = 1000, num = 1; n > 50; num++) {
 
 // Задание 6
 
-for (let dayNumber = 5; dayNumber < 31; dayNumber+=7) {
+for (let dayNumber = 5; dayNumber < 31; dayNumber += 7) {
         console.log (`Сегодня пятница ${dayNumber}-е число. Необходимо подготовить отчет`);
         continue;
 }

@@ -35,7 +35,6 @@ body {
 .header-bloc_text {
   margin-top: 32px;
   line-height: 1.8;
-  height: 64PX;
   font-size: 18px;
   max-width: 480px;
   color: #ffffff;
@@ -90,6 +89,50 @@ body {
   color: #FFFFFF;
 }
 
+.time {
+  height: 1024px;
+  background-image: url(img/Rectangle6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.time-bloc {
+  padding-top: 282px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.time-bloc__cell_title {
+  font-size: 48px;
+  max-width: 760px;
+  color: #ffffff;
+}
+.time-bloc__cell_text {
+  margin-top: 32px;
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 584px;
+  color: #ffffff;
+}
+.time-bloc__cell_button {
+  margin-top: 32px;
+  font-family: "Montserrat";
+  background: #9C0332;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 234px;
+  height: 48px;
+  font-size: 18px;
+  transition: all 0.5s;
+  border: 0;
+}
+.time-bloc__cell_button:hover {
+  background: #f7820d;
+  color: #FFFFFF;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -122,5 +165,34 @@ body {
   }
   .game__container_text {
     left: 16px;
+  }
+  .time {
+    height: 654px;
+  }
+  .time-bloc {
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-bloc__cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .time-bloc__cell_title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .time-bloc__cell_text {
+    text-align: center;
+    font-size: 14px;
+  }
+  .time-bloc__cell_button {
+    margin-top: 32px;
+  }
+  .time-bloc_img {
+    margin-top: 64px;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
