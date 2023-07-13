@@ -75,7 +75,7 @@ const numbr = [9, 8, 7, 6, 5];
 
    //console.log(search);
 
-   if (search === true) {
+   if (search) {                        //тут серч делает проверку на труе или фалс
     console.log('Угадал');
    } else {
     console.log('Не угадал');
@@ -85,13 +85,7 @@ const numbr = [9, 8, 7, 6, 5];
 
     let text = 'abcdef'
 
-    text = text.split('');
-    console.log(text);
-
-    text = text.reverse('')
-    console.log(text);
-
-    text = text.join('');
+    text = text.split('').reverse('').join('');
     console.log(text);
 
  // Задание 9
