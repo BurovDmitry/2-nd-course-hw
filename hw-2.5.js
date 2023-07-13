@@ -108,7 +108,7 @@ console.log(nM(n));
 // Задание 7
 
 function getArea() {
-    return this.radius ** 2 *3.14;
+    return this.radius ** 2 * 3.14;
   }
   function getPerimeter() {
     return this.radius * 2 * 3.14;
