@@ -19,6 +19,27 @@ function monthNumber() {
 
 
 
+function memorizeWords() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    fruits = fruits.join(', ');
+    alert(fruits)
+    let userquestions1 = prompt('Чему равен первый элемент массива?');
+    let userquestions2 = prompt('Чему равнялся последний элемент массива?')
+
+    if (index[0] === userquestions1 && userquestions2) {
+        alert('Поздравить пользователя, если он угадал оба элемента')
+    } else {
+        if (?? === userquestions1 || userquestions2) {
+            alert('Вы были близки к победе!') 
+        } else {
+            alert('Вы ответили неверно')
+        }
+    }
+}
+
+
+
 
 
 
