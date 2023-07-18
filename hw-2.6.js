@@ -116,6 +116,7 @@ function mult(arr){
   }
 console.log(mult([1, 2, 3]));
 
+// Задание 12
 
 function getLengthWords(arrr){
     
