@@ -148,6 +148,58 @@ body {
         }
     }
 
- }
+}
+
+.words{
+    height: 1024px;
+    background-image: url(img/Rectangle7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+.words-bloc {
+    padding-top: 282px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    &__cell {
+
+        &_title {
+            font-size: 48px;
+            max-width: 760px;
+            color: #ffffff;;
+        }
+       
+        &_text {
+            margin-top: 32px;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 584px;
+            color: #ffffff;
+        }
+    
+        &_button {
+            margin-top: 32px;
+            font-family: "Montserrat";
+            background: #9C0332;
+            color: #ffffff;
+            border-radius: 20px;
+            width: 234px;
+            height: 48px;
+            font-size: 18px;
+            transition: all 0.5s;
+            border: 0;
+            &:hover {
+                background: #f7820d;
+                color: #FFFFFF;   
+            }
+        }
+    }
+
+}
 
  @import 'mobile';

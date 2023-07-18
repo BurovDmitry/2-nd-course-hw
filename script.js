@@ -1,4 +1,4 @@
-//не выводит =/
+
 
 function monthNumber() {
     let userAnswe = prompt(`Введите номер месяца`, '1 - 12');
@@ -16,6 +16,8 @@ function monthNumber() {
     }
     alert(season);
 }
+
+
 
 
 
