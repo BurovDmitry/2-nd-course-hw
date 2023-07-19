@@ -22,29 +22,32 @@ function monthNumber() {
 function memorizeWords() {
     let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     fruits = fruits.sort(() => Math.random() - 0.5);
-    fruits = fruits.join(', ');
-    alert(fruits)
-    fruits = fruits.split(', ');
-//    console.log(fruits);
+    const fruitsText = fruits.join(', ');
+    alert(fruitsText);
+    //console.log(fruitsText);
 
-    let userQuestions1 = prompt('Чему равен первый элемент массива?');
-    let userQuestions2 = prompt('Чему равнялся последний элемент массива?')
+    const userAnswer = prompt('Чему равен первый элемент массива?').toLowerCase(); 
+    const userAnswer2 = prompt('Чему равнялся последний элемент массива?').toLowerCase();
+    const fruitsCheck = fruits.map(value => value.toLowerCase());
+    const lastIndex = fruits.length - 1;
 
-     if (fruits[0] && fruits[fruits.length - 1] === userQuestions1 && userQuestions2) {
-         alert('Поздравить пользователя, если он угадал оба элемента')
+     if (fruitsCheck[0] === userAnswer && fruitsCheck[lastIndex] === userAnswer2) {
+         alert('Поздравить пользователя, если он угадал оба элемента');
 
      } else {
-         if (fruits[0] || fruits[fruits.length - 1] === userQuestions1 || userQuestions2) {
-             alert('Вы были близки к победе!') 
+         if (fruitsCheck[0] === userAnswer || fruitsCheck[lastIndex] === userAnswer2) {
+             alert('Вы были близки к победе!'); 
 
          } else {
-             alert('Вы ответили неверно')
+             alert('Вы ответили неверно');
          }
      }
 }
 
-//.toUpperCase()
 
+
+//.toUpperCase()
+//.toLowerCase
 
 
 
