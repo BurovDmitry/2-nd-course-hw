@@ -30,9 +30,11 @@ searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'); /
 searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'); // ['груша']
 searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино'); // []
 
+
 // Задание 3
 
 const a = 32.58884;
+
 console.log(Math.round(a));
 console.log(Math.ceil(a));
 console.log(Math.fround(a));
@@ -41,9 +43,9 @@ console.log(Math.fround(a));
 // Задание 4
 
 const b = [52, 53, 49, 77, 21, 32];
+
 console.log(Math.min(...b));
 console.log(Math.max(...b));
-
 
 
 // Задание 5
@@ -54,11 +56,14 @@ console.log (Math.round(Math.random() * 10));
 // Задание 6
 
 function getRandomArrNumbers(num) {
+
   let array = [];
   let halfArray = Math.floor(num / 2);
   for (let i = 0; i < halfArray; i++) {
+
       array.push(Math.ceil(Math.random() * num));
   }
+
   return array;
 };
 
@@ -72,14 +77,16 @@ console.log(getRandomArrNumbers(9));
 // [9, 11, 10, 9, 3, 0] - массив заполнен случайными числами
 // от 0 до 12, длина массива 12 / 2 = 6
 
-/*
+
 // Задание 7
 
 function getRandomInt(min, max) {
+
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min+1)) + min
 }
+
 console.log(getRandomInt(1, 10));
 
 
@@ -96,8 +103,8 @@ currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 
 
-
 // Задание 10
+
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
 "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
