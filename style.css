@@ -18,7 +18,7 @@ body {
 
 .header {
   height: 1024px;
-  background-image: url(img/Rectangle1.jpg);
+  background-image: url(./img/Rectangle1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,7 +58,7 @@ body {
 
 .game {
   height: 556px;
-  background-image: url(img/Rectangle5.jpg);
+  background-image: url(./img/Rectangle5.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,7 +91,7 @@ body {
 
 .time {
   height: 1024px;
-  background-image: url(img/Rectangle6.jpg);
+  background-image: url(./img/Rectangle6.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,7 +135,7 @@ body {
 
 .words {
   height: 1024px;
-  background-image: url(img/Rectangle7.jpg);
+  background-image: url(./img/Rectangle7.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

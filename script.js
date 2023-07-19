@@ -24,21 +24,22 @@ function memorizeWords() {
     fruits = fruits.sort(() => Math.random() - 0.5);
     fruits = fruits.join(', ');
     alert(fruits)
+
+    let userQuestions1 = prompt('Чему равен первый элемент массива?');
+    let userQuestions2 = prompt('Чему равнялся последний элемент массива?')
+
+     if (fruits.toUpperCase()[0] && fruits.toUpperCase()[-1] == userQuestions1.toUpperCase() && userQuestions2.toUpperCase()) {
+         alert('Поздравить пользователя, если он угадал оба элемента')
+
+     } else {
+         if (fruits.toUpperCase()[0] || fruits.toUpperCase()[-1] == userQuestions1.toUpperCase() || userQuestions2.toUpperCase()) {
+             alert('Вы были близки к победе!') 
+
+         } else {
+             alert('Вы ответили неверно')
+         }
+     }
 }
-    // let userquestions1 = prompt('Чему равен первый элемент массива?');
-    // let userquestions2 = prompt('Чему равнялся последний элемент массива?')
-
-//     if (index[0] === userquestions1 && userquestions2) {
-//         alert('Поздравить пользователя, если он угадал оба элемента')
-//     } else {
-//         if (?? === userquestions1 || userquestions2) {
-//             alert('Вы были близки к победе!') 
-//         } else {
-//             alert('Вы ответили неверно')
-//         }
-//     }
-// }
-
 
 
 
