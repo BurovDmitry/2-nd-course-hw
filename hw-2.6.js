@@ -1,4 +1,4 @@
-
+  
 // Задание 1
 
 const numbers = [1, 5, 4, 10, 0, 3];
@@ -116,6 +116,7 @@ function mult(arr){
   }
 console.log(mult([1, 2, 3]));
 
+// Задание 12
 
 function getLengthWords(arrr){
     
@@ -135,3 +136,4 @@ function filterPositive(array) {
 
 console.log(filterPositive([-1, 0, 5, -10, 56]));
 console.log(filterPositive([-25, 25, 0, -1000, -2]));
+
